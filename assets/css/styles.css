@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo-img{
+    width: 200px;
+    height: auto;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+}
+.nav-list a{
+    color: #fff;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.55s ease;
+}
+
+.nav-list a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+#menu-icon{
+    color: #fff;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+body{
+    background: rgb(0,194,255);
+    background: linear-gradient(90deg, rgba(0,194,255,1) 0%, rgba(198,138,247,1) 51%, rgba(255,46,124,1) 100%);
+    /* background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%); */
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 2%;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 45px;
+}
+
+.logo-text{
+    width: 500px;
+    height: auto;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img{
+    height: 700px;
+    width: auto;
+    background-color: rgba(101, 219, 255, 0.879);
+    border-radius: 2px solid #fff;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.searchBox{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox input {
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    outline: none;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: white;
+    color: #000;
+}
+
+.searchBox button {
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pokemonBox {
+    display: block;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.box-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.pokemonBox img {
+    width: 300px;
+    height: auto;
+}
+
+.pokemonBox h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: #fff;
+}
+.pokemonBox p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.9;
+}
+  
+.pokemonBox .pokemonInfos {
+    padding: 2rem;
+}
+
+/* .hero-img img{
+    width: 700px;
+    height: auto;
+} */
+
+.hero-text a{
+    display: inline-block;
+    color: #fff;
+    background: rgb(58, 209, 255);
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translateX(8px);
+}
+
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid #fff;
+    margin-left: 20px;
+}
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.55s ease;
+}
+
+.icons i:hover{
+    color: rgb(58, 209, 255);
+    transform: translateY(-5px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: #fff;
+    background: rgb(58, 209, 255);
+    border-radius: 30px;
+    transition: all 0.50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1535px) {
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px) {
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    .pokemonBox img {
+        width: 400px;
+        height: auto;
+    }
+    
+    .pokemonBox h1{
+        font-family: 'Permanent Marker', cursive;
+        font-size: 75px;
+        line-height: 1;
+        color: #fff;
+    }
+    .pokemonBox p {
+        color: #fff;
+        font-size: 25px;
+        line-height: 1.9;
+    }
+
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .hero-text{
+        padding-top: 115px;
+    }
+
+    .pokemonBox img {
+        width: 300px;
+        height: auto;
+    }
+
+    .hero-img{
+        width: 80%;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 20vh;
+        background: rgb(58, 209, 255);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+
+    .nav-list a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+
+    .nav-list.open{
+        right: 0;
+        border-radius: 15px;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero-img{
+        width: 100%;
+        height: auto;
+    }
+}
